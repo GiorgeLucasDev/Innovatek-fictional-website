@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #070707;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 50px;
+    box-shadow: 0px -1px 9px 2px #00000036;
+}
+
+.header-left{
+    flex-grow: 2;
+    color: white;
+}
+
+.header-left a{
+    text-decoration: none;
+    color: white;
+}
+
+#title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    font-weight: 100;
+}
+
+nav ul{
+    gap: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: rgb(241, 241, 241);
+}
+
+.section{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 100px 230px;
+}
+
+.section h2{
+    font-size: 45px;
+    font-weight: 100;
+}
+
+.section ul{
+    list-style: none;
+}
+
+#about{
+    gap: 35px;
+    background: linear-gradient(180deg, #070707, #0e0e0e);
+    color: white;
+    background-color: #0c0c0c;
+    justify-content: space-between;
+    padding: 100px 300px;
+}
+
+#about h2{
+    font-size: 50px;
+    font-weight: 100;
+}
+
+#about p{
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.button{
+    background: linear-gradient(106deg, white, #d0d0d0);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    transition: all 0.2s linear;
+    color: black;
+}
+
+.button:hover{
+    background: linear-gradient(106deg, white, #ffffff);
+}
+
+.button.dark{
+    background: #0e0e0e;
+    color: white;
+}
+
+.button.dark:hover{
+    background: #242424;
+}
+
+.button i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+
+#service{
+    background-color: #0e0e0e;
+    gap: 30px;
+    list-style-position: inside;
+    padding: 80px 368px;
+    color: white;
+}
+
+#service h2{
+    font-weight: 100;
+}
+
+.services-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.collapsible{
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.collapsible .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.collapsible .top p {
+    margin: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.collapsible p{
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.collapsible .top i {
+    float: right;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding-right: 15px;
+}
+
+.collapsible .content {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    display: none;
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+    box-shadow: 0px -1px 0px #ddd;
+}
+
+.seta .content {
+    max-height: 500px;
+}
+
+.collapsible.active {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    background-color: white;
+}
+
+#why {
+    gap: 30px;
+    list-style-position: inside;
+}
+
+#why h2{
+    font-weight: bold;
+}
+#why ol {
+    padding: 0px 0px 0px 195px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    text-align: left;
+    list-style-position: inside;
+    font-weight: bold;
+}
+#why li::marker{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+#client {
+    background-color: #0e0e0e;
+    color: white;
+    gap: 30px;
+}
+
+.list-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-item{
+    font-size: 18px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.list-item i {
+    margin-right: 10px;
+}
+
+#work {
+    gap: 30px;
+}
+
+#work h2{
+    font-weight: 600;
+}
+
+#work p{
+    font-weight: bold;
+    line-height: 2;
+}
+
+footer {
+    background-color: #0e0e0e;
+    color: white;
+    padding: 59px 130px;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.footer-left, .footer-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.footer-left h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-left p{
+    text-align: justify;
+}
+
+.footer-right p {
+    font-size: 16px;
+}
+
+.footer-right i{
+    margin-right: 10px;
+}
+
+
+.revealPull{
+    position: relative;
+    transform: translateY(400px);
+    opacity: 0;
+    transition: all 2s ease; 
+}
+
+.revealPull.activePull{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+.reveal{
+    position: relative;
+    opacity: 0;
+    transition: all 1.5s ease; 
+}
+
+.reveal.active{
+    opacity: 1;
+}

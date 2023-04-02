@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Innovatek</title>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="index.html">
+                <h1 id="title">Innovatek</h1>
+            </a>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about" class="section">
+            <h2>Formulário de Recrutamento</h2>
+            <p>A Innovatek está sempre em busca dos melhores talentos para integrar a nossa equipe. Se você é apaixonado por tecnologia e inovação, preencha o formulário abaixo e venha fazer parte da nossa equipe.</p>
+        </section>
+        <section id="form" class="section">
+            <form id="form-elem" action="">
+                <h2><i class="fa fa-user"></i> Informações pessoais</h2>
+                
+                <label for="fname" class="required">Nome Completo: </label>
+                <input type="text" name="fname" id="fname" placeholder="Digite seu nome completo" required  pattern="[a-zA-Z\s]+">
+
+                <label for="birthday" class="required">Data de nascimento: </label>
+                <input type="date" name="birthday" id="birthday" placeholder="Digite sua data de nascimento" required max="${new Date().toISOString().split('T')[0]}">
+
+                <label for="gender" class="required">Gênero: </label>
+                <select name="gender" id="gender">
+                    <option value="male">Masculino</option>
+                    <option value="female">Feminino</option>
+                </select>
+
+                <label for="email"  class="required">E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="Digite seu endereço de e-mail" required>
+
+                <label for="phone" class="required">Telefone: </label>
+                <input type="tel" name="phone" id="phone" placeholder="Digite seu número de telefone" required pattern="\(\d{2}\)\s?\d{4,5}-\d{4}">
+
+                <label for="address" class="required">Endereço: </label>
+                <input type="text" name="address" id="address" placeholder="Digite seu endereço" required>
+
+                
+
+                <label for="status" class="required" >Estado Civil: </label>
+                <select name="status" id="status" required>
+                    <option value="single">Solteiro(a)</option>
+                    <option value="married">Casado(a)</option>
+                    <option value="widowed">Viúvo(a)</option>
+                    <option value="divorced">Divorciado(a)</option>
+                </select>
+
+                <hr>
+
+                <h2><i class="fa fa-mortar-board"></i> Formação Acadêmica</h2>
+                <label for="degree" class="required">Nível de escolaridade: </label>
+                <select name="degree" id="degree" required>
+                    <option value="fundamental-incomplete">Ensino Fundamental Incompleto</option>
+                    <option value="fundamental-complete">Ensino Fundamental Completo</option>
+                    <option value="high-school-incomplete">Ensino Médio Incompleto</option>
+                    <option value="high-school-complete">Ensino Médio Completo</option>
+                    <option value="college-incomplete">Ensino Superior Incompleto</option>
+                    <option value="college-complete">Ensino Superior Completo</option>
+                    <option value="post-graduation">Pós-graduação</option>
+                    <option value="masters">Mestrado</option>
+                    <option value="doctorate">Doutorado</option>
+                </select>
+                <label for="institution" class="required">Instituição de ensino: </label>
+                <input type="text" name="institution" id="institution" placeholder="Digite a sua instituição de ensino" required>
+                
+                <label for="course" class="required">Curso: </label>
+                <input type="text" name="course" id="course" placeholder="Digite o seu curso" required>
+                
+                <label for="completion-year" class="required">Ano de conclusão: </label>
+                <input type="number" name="completion-year" id="completion-year" placeholder="Digite o ano de conclusão do curso" min="1900" max="2099" required>
+                
+                <hr>
+
+                <h2><i class="fa fa-briefcase"></i> Experiência profissional</h2>
+                
+                <label for="company">Empresa: </label>
+                <input type="text" name="company" id="company">
+                
+                <label for="position">Cargo: </label>
+                <input type="text" name="position" id="position">
+                
+                <label for="start-date">Data de início: </label>
+                <input type="date" name="start-date" id="start-date">
+                
+                <label for="end-date">Data de términio (opcional): </label>
+                <input type="date" name="end-date" id="end-date">
+                
+                <label for="responsibilities">Principais responsabilidades: </label>
+                <textarea name="responsibilities" id="responsibilities" rows="4" cols="40"></textarea>
+                
+                <hr>
+
+                <h2><i class="fa fa-code"></i> Conhecimentos Técnicos</h2>
+                
+                <label for="languages" class="required">Idiomas: </label>
+                <input type="text" name="languages" id="languages" placeholder="Quais idiomas você domina ou já teve contato?" required>
+                
+                <label for="programming-languages" class="required">Linguagens de programação: </label>
+                <input type="text" name="programming-languages" id="programming-languages" placeholder="Insira as linguagens de programação com as quais você está familiarizado" required>
+                
+                <label for="tools" class="required">Ferramentas: </label>
+                <input type="text" name="tools" id="tools" placeholder="Insira as ferramentas de programação que você usa" required>
+                
+                <label for="courses">Cursos e certificações: </label>
+                <textarea name="courses" id="courses" placeholder="Quais cursos e certificações você possui na área?"></textarea>
+                
+                <hr>
+
+                <h2> <i class="fa fa-info-circle"></i> Informações Adicionais</h2>
+                
+                <label for="linkedin">Perfil do LinkedIn: </label>
+                <input type="text" name="linkedin" id="linkedin">
+                
+                <label for="portfolio">Portfólio: </label>
+                <input type="text" name="portfolio" id="portfolio">
+                
+                <label for="references">Referências profissionais: </label>
+                <textarea name="references" id="references"></textarea>
+
+                <button id="submit" class="button dark" type="submit">Enviar</button>
+            </form>
+            <div id="summary" class="collapsible">
+                <div class="top">
+                    <p>Resumo das respostas</p>
+                    <i class="seta fa fa-chevron-down"></i>
+                </div>
+                <div class="content">
+                    <div class="summary-container">
+                        <b><p><i class="fa fa-user"></i> Informações Pessoais</p></b>
+                        <div class="summary-field">
+                            <p>Nome Completo: </p><p id="fname-p" class="summary-aswner">Nome Completo</p>
+                        </div>
+                        <div class="summary-field">
+                            <p>Data de nascimento: </p><p id="birthday-p" class="summary-aswner">Data de nascimento</p>
+                        </div>
+                        <div class="summary-field">
+                            <p>Gênero: </p><p id="gender-p" class="summary-aswner">Gênero</p>
+                        </div>
+                        <div class="summary-field">
+                            <p>E-mail: </p><p id="email-p" class="summary-aswner">E-mail</p>
+                        </div>
+                        <div class="summary-field">
+                            <p>Telefone: </p><p id="phone-p" class="summary-aswner">Telefone</p>
+                        </div>
+                        <div class="summary-field">
+                            <p>Endereço: </p><p id="address-p" class="summary-aswner">Endereço</p>
+                        </div>
+                        <div class="summary-field">
+                            <p>Estado Civil: </p><p id="status-p" class="summary-aswner">Estado Civil </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="summary-container">
+                        <b><p><i class="fa fa-mortar-board"></i> Formação acadêmica</p></b>
+                        <div class="summary-field">
+                            <p>Nivel de escolaridade: </p><p id="degree-p" class="summary-aswner">Nivel de escolaridade</p>
+                        </div>
+                        <div class="summary-field">
+                            <p>Curso: </p><p id="course-p" class="summary-aswner">Curso</p>
+                        </div>
+                        <div class="summary-field">
+                            <p>Ano de conclusão: </p><p id="completion-year-p" class="summary-aswner">Ano de conclusão</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="summary-container">
+                        <b><p><i class="fa fa-briefcase"></i> Experiência profissional</p></b>
+                        <div class="summary-field">
+                            <p>Empresa: </p><p id="company-p" class="summary-aswner">Empresa</p>
+                        </div>
+                        <div class="summary-field">
+                            Cargo: <p id="position-p" class="summary-aswner">Cargo</p>
+                        </div>
+                        <div class="summary-field">
+                            <p>Data de início: </p><p id="start-date-p" class="summary-aswner">Data de início</p>
+                        </div>
+                        <div class="summary-field">
+                            <p>Data de términio: </p><p id="end-date-p" class="summary-aswner">Data de términio</p>
+                        </div>
+                        <div class="summary-field">
+                            <p>Principais responsabilidade: </p><p id="responsibilities-p" class="summary-aswner">Principais responsabilidade</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="summary-container">
+                        <b><p><i class="fa fa-code"></i> Conhecimentos Técnicos</p></b>
+                        <div class="summary-field">
+                            <p>Idiomas: </p><p id="languages-p" class="summary-aswner">Idiomas</p>
+                        </div>
+                        <div class="summary-field">
+                            <p>Linguagens de programação: </p><p id="programming-languages-p" class="summary-aswner">Linguagens de programação</p>
+                        </div>
+                        <div class="summary-field">
+                            <p>Ferramentas: </p><p id="tools-p" class="summary-aswner">Ferramentas</p>
+                        </div>
+                        <div class="summary-field">
+                            <p>Cursos e certificações: </p><p id="courses-p" class="summary-aswner">Cursos e certificações</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="summary-container">
+                        <b><p><i class="fa fa-info-circle"></i> Informações Adicionais</p></b>
+                        <div class="summary-field">
+                            <p>Perfil do Linkedin: </p><p id="linkedin-p" class="summary-aswner">Perfil do Linkedin</p>
+                        </div>
+                        <div class="summary-field">
+                            <p>Portfólio: </p><p id="portfolio-p" class="summary-aswner">Portfólio:</p>
+                        </div>
+                        <div class="summary-field">
+                            <p>Referências profissionais: </p><p id="references-p" class="summary-aswner">Referências profissionais</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-left">
+            <h1>Innovatek</h1>
+            <p>A Innovatek é uma empresa de tecnologia que oferece soluções personalizadas para empresas de diversos segmentos. Com mais de 10 anos de experiência no mercado, estamos constantemente inovando e nos adaptando às necessidades dos nossos clientes.</p>
+        </div>
+        <div class="footer-right">
+            <p><i class="fa fa-phone"></i>Telefone: (63) 1234-5678</p>
+            <p><i class="fa fa-envelope"></i>E-mail: contato@innovatek.com.br</p>
+            <p><i class="fa fa-map-marker"></i>Endereço: Rua dos Programadores, 123 - Centro, São Paulo/SP</p>
+            <p><i class="fa fa-map-marker"></i>CEP: 01000-00</p>
+            
+        </div>
+    </footer>
+    <script src="loadData.js"></script>
+    <script src="collapse.js"></script>
+</body>
+</html>
